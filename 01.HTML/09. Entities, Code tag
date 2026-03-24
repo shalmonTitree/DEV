@@ -1,0 +1,64 @@
+HTML Entities and Code Tag
+1. HTML Entities
+
+HTML entities are used to display reserved characters or symbols that cannot be typed directly in HTML.
+
+Why are Entities Needed?
+
+Some characters have special meaning in HTML:
+
+< and > are used for tags
+& is used for entities
+
+To display them as text, we use HTML entities.
+
+Syntax
+&entity_name;
+
+or
+
+&#entity_number;
+Common HTML Entities
+Character	Entity Name	Entity Number
+<	&lt;	&#60;
+>	&gt;	&#62;
+&	&amp;	&#38;
+"	&quot;	&#34;
+'	&apos;	&#39;
+Space	&nbsp;	&#160;
+Example
+<p>This is &lt;b&gt;bold&lt;/b&gt; text</p>
+Output
+
+This is <b>bold</b> text
+
+Features
+Prevents browser from interpreting special characters
+Used for symbols and formatting
+Ensures correct display of content
+2. <code> Tag in HTML
+
+The <code> tag is used to display programming code in a webpage.
+
+Syntax
+<code>your code here</code>
+Example
+<p>Example of code: <code>int x = 10;</code></p>
+Features
+Displays text in monospace font
+Used for inline code snippets
+Improves readability of technical content
+Multiline Code (with <pre> tag)
+
+To preserve spacing and line breaks, use <pre> with <code>.
+
+<pre>
+<code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello";
+}
+</code>
+</pre>
